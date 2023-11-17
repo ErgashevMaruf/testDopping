@@ -1,0 +1,14 @@
+<div class="relative">
+  <div [ngClass]="mainInputClass" class="select-none" (click)="openMenu()">
+    <p>uz</p>
+    <span
+      class="material-symbols-outlined cursor-pointer select-none"
+      [@rotatedState]="openBox"
+    >
+      expand_more
+    </span>
+  </div>
+  <div class="absolute top-6 z-50 bg-green-700 p-[10px]" *ngIf="show">
+    <p *ngFor="let item of languages">item</p>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="w-full flex p-[30px] nav justify-between items-center text-white">
+  <div>
+    <img
+      src="./assets/logo/logoWhite.png"
+      alt=""
+      class="w-[200px] h-[50px] object-contain"
+    />
+  </div>
+  <div class="flex gap-[20px] font-semibold">
+    <a href="">Bosh sahifa</a>
+    <a href="">Yordam</a>
+    <a href="">Ko'p beriladigan savollar</a>
+  </div>
+  <div class="flex gap-[5px] cursor-pointer" (click)="signIn()">
+    <app-dropdown
+      mainInputClass="flex items-center font-semibold gap-[5px] mr-[10px] cursor-pointer select-none"
+    ></app-dropdown>
+    <p class="font-semibold">Login Admin</p>
+    <span class="material-symbols-outlined font-semibold"> login </span>
+  </div>
+</div>
+<router-outlet></router-outlet>

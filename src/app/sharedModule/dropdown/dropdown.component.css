@@ -1,0 +1,17 @@
+.flex {
+    display: flex !important;
+}
+.input {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #c0c5d4a6;
+    border-radius: 8px;
+}
+.borderOpen{
+    border-color: #6E62E5 !important;
+}
+.borderError{
+    border-color: red !important;
+}
+.multipleChooseBg{
+    background-color: #6E62E521 !important;
+}
