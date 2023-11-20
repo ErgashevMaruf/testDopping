@@ -8,7 +8,11 @@
       expand_more
     </span>
   </div>
-  <div class="absolute top-6 z-50 bg-green-700 p-[10px]" *ngIf="show">
+  <div
+    class="absolute top-6 z-50 bg-green-700 p-[10px]"
+    [ngClass]="openMenuClass"
+    *ngIf="show"
+  >
     <p *ngFor="let item of languages">item</p>
   </div>
 </div>

@@ -1,3 +1,25 @@
-<p>
-  faq works!
-</p>
+<div class="nav p-[30px] rounded-t-[10px]">
+  <p class="font-bold text-white">Yordam</p>
+</div>
+<div class="px-[30px] bg-white shadow-xl overflow-y-auto">
+  <div
+    class="relative"
+    *ngFor="let x of [1, 1, 2, 2, 2, 2]; let index = index; let last = last"
+  >
+    <div>
+      <div
+        class="w-[10px] h-[10px] absolute top-10 left-[-5px] rounded-full bg-[#00B050]"
+      ></div>
+      <div
+        *ngIf="index !== [1, 1, 2, 2, 2, 2].length - 1"
+        class="w-[2px] h-full absolute bg-[#00B050] top-10 left-[-1px]"
+      ></div>
+      <p class="p-[30px]">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        qui doloremque doloribus, libero eius a laudantium provident expedita
+        sapiente labore repellat perferendis reiciendis nam, quae dignissimos?
+        Assumenda magnam voluptatem aspernatur.
+      </p>
+    </div>
+  </div>
+</div>

@@ -23,6 +23,7 @@ import {
 })
 export class DropdownComponent {
   @Input() mainInputClass = '';
+  @Input() openMenuClass = '';
   openBox = 'default';
   show = false;
   languages = ['Uz', 'Eng', 'Ru'];
